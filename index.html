@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="container">
     <h1 id="title"> SURVEY FORM</h1>
     <p id="description">This is a survey form project for microverse application</p>
     <form id="survey-form">
@@ -29,26 +34,39 @@
         <option >Other</option>
       </select>
 
-      <br>
+      <br>  
+        <label for="">How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <div id="radio-menu">
+            <input type="radio" value="val1" name="group1"> <br>
+            <input type="radio" value="val2" name="group1">  Maybe <br>
+            <input type="radio" value="val3" name="group1"> Not Sure <br>
+        </div>
+        <div id="check-menu">
+          <input type="checkbox" value="val1"> Front End <br>
+          <input type="checkbox" value="val2"> Back End <br>
+          <input type="checkbox" value="val1"> Data Visualization <br>
+          <input type="checkbox" value="val3"> Challenges <br>
+          <input type="checkbox" value="val4"> Open Source Community <br>
+          <input type="checkbox" value="val5"> Gitter help rooms <br>
+          <input type="checkbox" value="val6"> Videos <br>
+          <input type="checkbox" value="val7"> City Meetups <br>
+          <input type="checkbox" value="val8"> Wiki <br>
+          <input type="checkbox" value="val9"> Forum <br>
+          <input type="checkbox" value="val10"> Additional Courses <br>
+        </div>
 
-          <input type="radio" value="val1" name="group1"> Definitely <br>
-          <input type="radio" value="val2" name="group1"> Maybe <br>
-          <input type="radio" value="val3" name="group1"> Not Sure <br>
+        <br/>
+        <textarea rows="3" cols="50" placeholder="Enter your comment here...">
+          Any Comments or Suggestions?  
+          Enter your comment here...
+        </textarea>
 
-        <input type="checkbox" value="val1"> Front End <br>
-        <input type="checkbox" value="val2"> Back End <br>
-        <input type="checkbox" value="val1"> Data Visualization <br>
-        <input type="checkbox" value="val3"> Challenges <br>
-        <input type="checkbox" value="val4"> Open Source Community <br>
-        <input type="checkbox" value="val5"> Gitter help rooms <br>
-        <input type="checkbox" value="val6"> Videos <br>
-        <input type="checkbox" value="val7"> City Meetups <br>
-        <input type="checkbox" value="val8"> Wiki <br>
-        <input type="checkbox" value="val9"> Forum <br>
-        <input type="checkbox" value="val10"> Additional Courses <br>
-
+        <input id="submit" type="submit" text="Submit"/>
+        </div>
     </form>
     
+
+
     <!--
 
     Hello Camper!
