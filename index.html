@@ -12,20 +12,25 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <div id="container">
+    <div class="container">
     <h1 id="title"> SURVEY FORM</h1>
     <p id="description">This is a survey form project for microverse application</p>
     <form id="survey-form">
+      <div class="form-group row">
       <label id="name-label" for="name">Name</label>
-      <input type="text" id="name" placeholder="Introduce your name" required/>
-      <br>
+      <input type="text" id="name" class="form-control" placeholder="Introduce your name" required/>
+      </div>
+      <div class="form-group row">
       <label id="email-label" for="email">Email</label>
-      <input type="email" id="email" placeholder="Introduce your email" required/>
-      <br>
+      <input type="email" class="form-control" id="email" placeholder="Introduce your email" required/>
+      </div>
+      <div class="form-group row">
       <label id="number-label" for="number">Age</label>
-      <input type="number" id="number" min="0" max="999" placeholder="Introduce a number">
-      <br>
+      <input type="number" class="form-control" id="number" min="0" max="999" placeholder="Introduce a number">
+      </div>
 
+      <div class="form-group row">
+      <label for ="dropdown">Wich option best describes your current role?</label>
       <select id="dropdown">
         <option >Student</option>
         <option >Full Time Job</option>
@@ -33,14 +38,15 @@
         <option >Prefer not to say</option>
         <option >Other</option>
       </select>
-
+    </div>
       <br>  
-        <label for="">How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <label for="radio-menu">How likely is that you would recommend freeCodeCamp to a friend?</label>
         <div id="radio-menu">
-            <input type="radio" value="val1" name="group1"> <br>
+            <input type="radio" value="val1" name="group1"> Definitely <br>
             <input type="radio" value="val2" name="group1">  Maybe <br>
             <input type="radio" value="val3" name="group1"> Not Sure <br>
         </div>
+        <label for ="check-menu">What do you like most in FCC?</label>
         <div id="check-menu">
           <input type="checkbox" value="val1"> Front End <br>
           <input type="checkbox" value="val2"> Back End <br>
